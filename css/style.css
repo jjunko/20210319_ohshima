@@ -1,0 +1,546 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/* header ここから */
+.header {
+    height: 45px;
+    background: black;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: white;
+    line-height: 50px;
+}
+
+.header-nav ul{
+    display: flex;
+}
+
+.header-nav li{
+    margin-right: 30px;
+    font-size: 10px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+}
+/* header ここまで */
+
+/* eyecatch ここから */
+#eyecatch {
+    position: relative;
+    background: url(../img/eyecatch.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+}
+
+#eyecatch h1 {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+
+.item1 {
+  position: absolute;  
+  width: 500px;
+  height: 50px;
+  background: white;
+  top: 580px;
+  right: 125px;
+}
+
+.item1 p{
+    color: rgb(61, 61, 61);
+    font-size: 11px;
+}
+
+p.indent {
+    text-indent: -1em;
+    padding-left: 1em;
+    line-height: 20px;
+}
+
+.item2 {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  position: absolute;  
+  width: 125px;
+  height: 50px;
+  background: black;
+  top: 580px;
+  right: 0px;
+}
+
+.item2 p {
+    color: white;
+    font-size: 10px;
+}
+/* eyecatch ここまで */
+
+/* main ここから */
+#main {
+    position: relative;
+    height: 500px;
+    background-color:black;
+}
+
+.main-img {
+    position: absolute;
+    top: 160px;
+    right: 80px;
+}
+
+.main-content h3 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: white;
+    font-size: 23px;
+}
+
+.main-content p {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.link {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 13px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    top: 65%;
+    left: 290px;
+    transition: 0.5s ease;
+}
+
+.link_button:hover {
+    background: black;
+    color: white;
+}
+/* main ここまで */
+
+/* service ここから */
+/* camera */
+#camera {
+    position: relative;
+    top: 150px;
+    height: 830px;
+    background-color: #e9e7e7;
+}
+
+.service-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    padding: 20px 0;
+}
+
+.camera-img {
+    position: absolute;
+    right: 0;
+}
+
+.camera-item {
+    position: absolute;
+    width: 600px;
+    height: 290px;
+    background-color: white;
+    top: 120px;
+    right: 600px;
+}
+
+.camera-item h4 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 15px;
+}
+
+.camera-item p1 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 12px;
+}
+
+.camera-item p2 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.link2 {
+    position: absolute;
+    top: 65%;
+    left: 66%;
+    text-decoration: none;
+    background: white;
+    color: black;
+    font-size: 12px;
+    padding: 7px 18px;
+    border: 1px black solid;
+    transition: 0.5s ease;
+}
+
+.link_button:hover {
+    background: black;
+    color: white;
+}
+/* camera */
+
+/* fire */
+#fire {
+    position: relative;
+    height: 600px;
+    background-color: #e9e7e7;
+}
+
+.fire-img {
+    position: absolute;
+    left: 0;
+}
+
+.fire-item {
+    position: absolute;
+    width: 600px;
+    height: 290px;
+    background-color: white;
+    top: 100px;
+    left: 600px;
+}
+
+.fire-item h4 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 15px;
+}
+
+.fire-item p1 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 12px;
+}
+
+.fire-item p2 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.link3 {
+    position: absolute;
+    top: 65%;
+    left: 66%;
+    text-decoration: none;
+    background: white;
+    color: black;
+    font-size: 12px;
+    padding: 7px 18px;
+    border: 1px black solid;
+    transition: 0.5s ease;
+}
+
+.link_button:hover {
+    background:black;
+    color: white;
+}
+/* fire */
+/* service ここまで */
+
+/* inquiry ここから */
+#inquiry {
+    position: relative;
+    height: 700px;
+}
+
+.company-img {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    object-fit: contain;
+    background-position: center bottom;
+}
+
+.recruit-img {
+    position: absolute;
+    top: 130px;
+    right: 0px;
+    object-fit: contain;
+    background-position: center bottom;
+    }
+
+.service h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 28px;
+    font-weight: bold;
+    color:white;
+}
+
+.service p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.FAQ-item {
+    position: relative;
+    width: 1000px;
+    height: 100px;
+    background: black;
+    top: 480px;
+    left: 15%;
+}
+
+.FAQ h1 {
+    position: absolute;
+    font-size: 28px;
+    line-height: 100px;
+    left: 5%;
+    color: white;
+}
+
+.FAQ p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+/* inquiry ここまで */
+
+/* contact ここから */
+#contact {
+    position: relative;
+    background: url(../img/contact-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+.contact h2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 27px;  
+} 
+
+.contact p1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contact h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+} 
+
+.contact p2 {
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 10px;
+} 
+
+.link4 {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 7px 18px;
+    border: 1px white solid;
+    transition: 0.5s ease;
+}
+/* contact ここまで */
+
+/* footer ここから */
+#footer {
+    height: 100px;
+    background:  black;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.footer-logo {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: white;
+    line-height: 50px;
+}
+
+.footer-nav ul{
+    display: flex;
+}
+
+.footer-nav li{
+    margin-right: 30px;
+    font-size: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    line-height: 60px;    
+    color:white;
+    font-size: 10px;
+}
+/* footer ここまで */
