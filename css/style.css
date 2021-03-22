@@ -122,7 +122,7 @@ input, select {
 
 .header-nav li{
     margin-right: 30px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .header-nav a {
@@ -381,18 +381,22 @@ p.indent {
 
 .company-img {
     position: absolute;
+    background: url(../img/company.jpeg) no-repeat;
+    background-size: cover;
     top: 130px;
     left: 0px;
     object-fit: contain;
-    background-position: center bottom;
+    background-position: center top; 
 }
 
 .recruit-img {
     position: absolute;
+    background-size: url(../img/recruit.jpg) no-repeat;
+    background-size: cover;
     top: 130px;
     right: 0px;
     object-fit: contain;
-    background-position: center bottom;
+    background-position: center top;
     }
 
 .service h1 {
@@ -447,57 +451,57 @@ p.indent {
     background: url(../img/contact-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: 520px;
 }
 
 .contact h2 {
     position: absolute;
-    top: 25%;
+    top: 31%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
-    font-size: 27px;  
+    font-size: 30px;  
 } 
 
 .contact p1 {
     position: absolute;
-    top: 30%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .contact h1 {
     position: absolute;
-    top: 40%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: lighter;
 } 
 
 .contact p2 {
     position: absolute;
     white-space: nowrap;
-    top: 50%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
-    font-size: 10px;
+    font-size: 12px;
 } 
 
 .link4 {
     position: absolute;
-    top: 58%;
+    top: 69%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-decoration: none;
     color: white;
     font-size: 12px;
-    padding: 7px 18px;
+    padding: 8px 22px;
     border: 1px white solid;
     transition: 0.5s ease;
 }
@@ -529,7 +533,7 @@ p.indent {
 
 .footer-nav li{
     margin-right: 30px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .footer-nav a {
