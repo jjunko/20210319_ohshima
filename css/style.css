@@ -379,11 +379,18 @@ p.indent {
     height: 700px;
 }
 
+/* inquiry ここから */
+#inquiry {
+    /* position: relative; */
+    display: flex;
+    height: 700px;
+}
+
 .company-img {
     position: absolute;
     background: url(../img/company.jpeg) no-repeat;
     background-size: cover;
-    top: 130px;
+    top: 130px
     left: 0px;
     object-fit: contain;
     background-position: center top; 
@@ -399,31 +406,31 @@ p.indent {
     background-position: center top;
     }
 
-.service h1 {
+.txt--en text {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 28px;
     font-weight: bold;
-    color:white;
+    color:tomato;
 }
 
-.service p {
+.txt--ja text {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 15px;
     font-weight: bold;
-    color: white;
+    color: tomato;
 }
 
 .FAQ-item {
     position: relative;
     width: 1000px;
     height: 100px;
-    background: black;
+    background: tomato;
     top: 480px;
     left: 15%;
 }
@@ -433,7 +440,7 @@ p.indent {
     font-size: 28px;
     line-height: 100px;
     left: 5%;
-    color: white;
+    color: plum;
 }
 
 .FAQ p {
@@ -441,7 +448,7 @@ p.indent {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: white;
+    color: orange;
 }
 /* inquiry ここまで */
 
